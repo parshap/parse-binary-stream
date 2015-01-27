@@ -1,0 +1,31 @@
+{
+  "name": "parse-binary-stream",
+  "version": "0.0.0",
+  "description": "Parse n-byte chunks from a binary stream",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:parshap/parse-binary-stream.git"
+  },
+  "keywords": [
+    "binary",
+    "parse"
+  ],
+  "author": "Parsha Pourkhomami",
+  "license": "Public Domain",
+  "bugs": {
+    "url": "https://github.com/parshap/parse-binary-stream/issues"
+  },
+  "homepage": "https://github.com/parshap/parse-binary-stream",
+  "dependencies": {
+    "duplexer2": "0.0.2",
+    "through2": "^0.6.3"
+  },
+  "devDependencies": {
+    "buffer-equal": "0.0.1",
+    "tape": "^3.4.0"
+  }
+}

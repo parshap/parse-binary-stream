@@ -4,7 +4,9 @@
   "description": "Parse n-byte chunks from a binary stream",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "test-browser": "zuul --local --open -- test.js",
+    "test-browser-sauce": "zuul -- test.js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,7 @@
   },
   "devDependencies": {
     "buffer-equal": "0.0.1",
-    "tape": "^3.4.0"
+    "tape": "^3.4.0",
+    "zuul": "^1.16.5"
   }
 }

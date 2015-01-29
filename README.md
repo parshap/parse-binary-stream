@@ -1,5 +1,7 @@
 # parse-binary-stream
 
+[![build status](https://secure.travis-ci.org/parshap/parse-binary-stream.svg?branch=master)](http://travis-ci.org/parshap/parse-binary-stream)
+
 Parse n-byte chunks from a binary stream.
 
 Call `read(n, callback)` and your callback will be call when `n` bytes

@@ -22,7 +22,7 @@ var parse = require("parse-binary-stream");
 var stream = parse(function(read) {
   // Parse the length value
   read(1, function(data) {
-    var length = data.readUInt16BE(0);
+    var length = data.readUInt8(0);
     // Parse the data of size length
     read(length, function(data) {
       console.log(data);
@@ -55,7 +55,7 @@ var stream = parse(function(read) {
   function parseMessage(callback) {
     // Parse the length value
     read(1, function(data) {
-      var length = data.readUInt16BE(0);
+      var length = data.readUInt8(0);
       // Parse the data of size length
       read(length, function(data) {
         callback(data);
